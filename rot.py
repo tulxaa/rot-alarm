@@ -66,10 +66,6 @@ def layout_stars(stars_to_layout):
     for index, star in enumerate(stars_to_layout):
         new_x_pos = (index + 1) * gap_size
         star.x = new_x_pos
-        if index % 2 == 0:
-            star.y = 0
-        else:
-            star.y = HEIGHT
 
 def animate_stars(stars_to_animate):
     for star in stars_to_animate:
